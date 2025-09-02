@@ -7,56 +7,48 @@ public class Silver4_1388_바닥장식 {
 
 
         Scanner scan = new Scanner(System.in);
-        String[] input = scan.nextLine().split(" "); // 2 3
+        String[] size = scan.nextLine().split(" "); // 6 9
 
-        int vertical = Integer.parseInt(input[0]); // 6
-        int horizontal = Integer.parseInt(input[1]); // 9
-        String[][] deco = new String[horizontal][vertical]; // [3][2]
+        int row = Integer.parseInt(size[0]); // 6
+        int col = Integer.parseInt(size[1]); // 9
+        String[][] deco = new String[row][col]; // [6][9]
 
 
-        for(int i = 0; i < vertical; i++) { // 2
-            String[] row = scan.nextLine().split(""); // 3개의 입력
+        for(int i = 0; i < row; i++) { // 6
+            String[] input = scan.nextLine().split(""); // 9개의 입력
 
-            for(int j = 0; j < horizontal; j++) { // 3
-                deco[j][i] = row[j];
+            for(int j = 0; j < col; j++) { // 9
+                deco[i][j] = input[j];
             }
         }
-        /*
-
-        -|--
-        -|--
-        ||-|
-        |--|
-
-         */
 
         int count = 0;
-        // 조합한 바닥은 빈 문자열로 바꿔서 계산 -> null이 아니면서 |이거나 -인 경우
-        for(int i = 0; i < vertical; i++) {
-            for(int j = 0; j <horizontal; j++) {
 
-                if(deco[j][i].equals("-") && !deco[j][i].isEmpty()) {
-                    System.out.println("count 증가 -> deco[" + j + "][" + i + "]");
+        // 조합한 바닥은 빈 문자열로 바꿔서 계산 -> null이 아니면서 |이거나 -인 경우
+        for(int i = 0; i < row; i++) {
+            for(int j = 0; j < col; j++) {
+                if(deco[i][j].equals("-")) {
+                    System.out.println("count 증가 -> deco[" + i + "][" + j + "]");
                     count++;
-                    for(int k = 1; k < horizontal-j; k++) {
-                        if(deco[j+k][i].equals("-")) {
-                            deco[j+k][i] = "";
-                        } else if (deco[j+k][i].equals("|")) {
+                    for(int k = 0; k < col -j; k++) {
+                        if(deco[i][j+k].equals("-")) {
+                            deco[i][j+k] = "";
+                        } else if (deco[i][j+k].equals("|")) {
                             break;
                         }
                     }
-                    deco[j][i] = "";
-                } else if (deco[j][i].equals("|") && !deco[j][i].isEmpty()) {
-                    System.out.println("count 증가 -> deco[" + j + "][" + i + "]");
+                    //deco[j][i] = "";
+                } else if (deco[i][j].equals("|")) {
+                    System.out.println("count 증가 -> deco[" + i + "][" + j + "]");
                     count++;
-                    for(int k = 1; k < vertical-i; k++) {
-                        if(deco[j][i+k].equals("|")) {
-                            deco[j][i+k] = "";
-                        } else if (deco[j][i+k].equals("-")) {
+                    for(int k = 0; k < row-i; k++) {
+                        if(deco[i+k][j].equals("|")) {
+                            deco[i+k][j] = "";
+                        } else if (deco[i+k][j].equals("-")) {
                             break;
                         }
                     }
-                    deco[j][i] = "";
+                    //deco[j][i] = "";
                 }
             }
         }
