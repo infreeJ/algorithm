@@ -49,6 +49,6 @@ public class Bronze2_3062_수뒤집기 {
             }
 
         }
-        //System.out.println(sb.toString());
+        System.out.println(sb.toString());
     }
 }
