@@ -2,18 +2,18 @@ package datastructure;
 
 import java.util.Scanner;
 
-class Node {
+class StackNode {
     int data;
-    Node next;
+    StackNode next;
 
-    public Node(int data) {
+    public StackNode(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
 class Stack {
-    private Node head;
+    private StackNode head;
     private int count;
 
     public Stack() {
@@ -22,7 +22,7 @@ class Stack {
     }
 
     public void push(int data) {
-        Node newNode = new Node(data);
+        StackNode newNode = new StackNode(data);
         newNode.next = head;
         head = newNode;
         count++;
