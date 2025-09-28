@@ -12,17 +12,12 @@ public class Bronze1_2869_달팽이는올라가고싶다 {
         int down = Integer.parseInt(input[1]);
         int height = Integer.parseInt(input[2]);
 
-        int count = 0;
-        while(true) {
-            count++;
-            height -= up;
-            if(height <= 0) {
-                break;
-            }
-            height += down;
-        }
+        double day = up - down;
+        double yesterday = height - up;
 
-//        System.out.println(count);
-        System.out.println(1000000000 / 1);
+        int result = (int)Math.ceil(yesterday / day);
+
+        System.out.println(result + 1);
+
     }
 }
