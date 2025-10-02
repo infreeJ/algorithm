@@ -1,4 +1,4 @@
-package inbox;
+package math;
 
 import java.util.ArrayList;
 import java.util.Scanner;

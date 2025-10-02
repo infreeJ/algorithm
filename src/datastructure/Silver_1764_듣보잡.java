@@ -1,4 +1,4 @@
-package inbox;
+package datastructure;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

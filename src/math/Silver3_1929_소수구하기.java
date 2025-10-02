@@ -1,4 +1,4 @@
-package inbox;
+package math;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

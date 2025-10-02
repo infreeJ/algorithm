@@ -1,4 +1,4 @@
-package inbox;
+package implementation;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

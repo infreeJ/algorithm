@@ -1,4 +1,4 @@
-package inbox;
+package datastructure;
 
 import java.util.HashSet;
 import java.util.Scanner;
