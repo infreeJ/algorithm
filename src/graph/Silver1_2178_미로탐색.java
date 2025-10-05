@@ -1,4 +1,4 @@
-package inbox;
+package graph;
 
 import java.util.LinkedList;
 import java.util.Queue;
