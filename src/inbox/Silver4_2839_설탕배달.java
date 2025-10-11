@@ -9,23 +9,30 @@ public class Silver4_2839_설탕배달 {
         int num = scan.nextInt();
         scan.nextLine();
 
-        int count = 0;
+        int five = 0;
+        int three = 0;
 
-        count += num / 5;
+        five += num / 5;
         num %= 5;
-
-        count += num / 3;
+        three += num / 3;
         num %= 3;
 
-        if (num == 0) {
-        } else {
+        if(num == 0) {
+            System.out.println(five + three);
+            return;
+        }
 
-            while (true) {
-                count--;
-                num += 5;
-                count += num / 3;
-                num %= 3;
+        while(five > 0) {
+            five--;
+            num += 5;
+            three += num/3;
+            num %= 3;
+            if(num == 0) {
+                System.out.println(five + three);
+                return;
             }
         }
+
+        System.out.println("-1");
     }
 }
