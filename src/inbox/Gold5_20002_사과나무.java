@@ -18,9 +18,30 @@ public class Gold5_20002_사과나무 {
             }
         }
 
+        int sum = 0;
+        int max = 0;
 
-//        for (int i = 0; i < ; i++) {
-//
-//        }
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if(arr[i][j] > sum) {
+                    sum = arr[i][j];
+                }
+            }
+        }
+
+
+
+
+
+        System.out.println(max);
+
     }
 }
+
+
+
+
+
+
+
+
