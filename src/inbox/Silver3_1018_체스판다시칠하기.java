@@ -32,6 +32,7 @@ public class Silver3_1018_체스판다시칠하기 {
         // 최소값 정의
         int min = 64;
 
+        // 첫 칸이 블랙인 경우와 화이트인 2가지 경우의 수
         for (int i = 0; i < 2; i++) {
             if(i == 1) {
                 initCol = false;
