@@ -11,6 +11,7 @@ public class Bronze3_10988_팰린드롬인지확인하기 {
 
         sb.append(input);
 
+        new Scanner(System.in);
         if(input.equals(sb.reverse().toString())) {
             System.out.println(1);
         } else {
