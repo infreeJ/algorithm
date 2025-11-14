@@ -1,10 +1,10 @@
-package datastructure;
+package data_structure;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Silver_1764_듣보잡 {
+public class Silver4_1764_듣보잡 {
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

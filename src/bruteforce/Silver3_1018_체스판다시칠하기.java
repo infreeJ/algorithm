@@ -1,4 +1,4 @@
-package inbox;
+package bruteforce;
 
 import java.io.BufferedReader;
 import java.io.IOException;
