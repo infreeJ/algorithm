@@ -1,4 +1,4 @@
-package inbox;
+package simulation;
 
 import java.io.*;
 
