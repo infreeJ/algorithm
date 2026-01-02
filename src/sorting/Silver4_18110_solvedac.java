@@ -1,4 +1,4 @@
-package inbox;
+package sorting;
 
 import java.util.*;
 import java.io.*;
@@ -15,8 +15,7 @@ public class Silver4_18110_solvedac {
     /*
     책임 분리
     1. 입력을 받고 결과를 출력하는 main 메서드
-    2. 정렬된 배열에서 제외되는 수를 제외한 배열을 반환하는 excludeArray 메서드
-    3. 최종 배열의 평균값을 구하는 getAverage 메서드
+    2. 배열의 평균값을 구하는 getAverage 메서드
      */
 
     public static void main(String[] args) throws IOException {
