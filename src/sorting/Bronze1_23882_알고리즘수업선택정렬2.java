@@ -1,4 +1,4 @@
-package inbox;
+package sorting;
 
 import java.io.*;
 
